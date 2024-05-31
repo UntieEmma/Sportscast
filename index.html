@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Radio</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href=""><img src="assets/Asset 1.svg" alt="" height="60rem"></a>
+            </div>
+            <ul>
+                <li><a href="arrticle.html" class="menu__link">Articles</a></li>
+                <li><a href="" class="menu__link">Categories</a></li>
+                <li><a href="" class="menu__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="background">
+        <img src="" id="bg-img">
+    </div>
+
+    <div class="container">
+        <div class="current-channel">
+            <div class="channel-img-controllers">
+                <div class="player-img">
+                    <img src="" class="active" id="cover">
+                </div>
+
+                <div class="player-controls">
+                    <i class="fa-solid fa-backward" title="Previous" id="prev"></i>
+                    <i class="fa-solid fa-play play-button" title="Play" id="play"></i>
+                    <i class="fa-solid fa-forward" title="Next" id="next"></i>
+                </div>
+            </div>
+            <div class="channel-names">
+                <h2 id="channel-title"></h2>
+                <h3 id="channel-artist"></h3>
+            </div>
+        </div>
+
+        <div class="other-channels">
+            <div class="audio-player" id="africa-audio">
+                    <audio controls>
+                            <source src="assets/podcats/AFRICA.mp3" type="audio/mpeg">
+                        </audio>
+                <div class="album-cover"><img src="assets/AFRICA.jpg" alt="Africa"></div>
+                <div>
+                    <div class="song-title">Africa</div>
+                    <p class="artist">Artist Name</p>
+                </div>
+            </div>
+            <div class="audio-player" id="asia-audio">
+                    <audio controls>
+                            <source src="assets/podcats/ASIA.mp3" type="audio/mpeg">
+                        </audio>
+                <div class="album-cover"><img src="assets/ASIA.png" alt="Asia"></div>
+                <div>
+                    <div class="song-title">Asia</div>
+                    <p class="artist">Artist Name</p>
+                </div>
+            </div>
+            <div class="audio-player" id="europe-audio">
+                    <audio controls>
+                            <source src="assets/podcats/EUROPE.mp3" type="audio/mpeg">
+                        </audio>
+                <div class="album-cover"><img src="assets/Europe.jfif" alt="Europe"></div>
+                <div>
+                    <div class="song-title">Europe</div>
+                    <p class="artist">Artist Name</p>
+                </div>
+            </div>
+            <div class="audio-player" id="northamerica-audio">
+                    <audio controls>
+                            <source src="assets/podcats/North America.mp3" type="audio/mpeg">
+                        </audio>
+                <div class="album-cover"><img src="assets/north America.png" alt="North America"></div>
+                <div>
+                    <div class="song-title">North America</div>
+                    <p class="artist">Artist Name</p>
+                </div>
+            </div>
+            <div class="audio-player" id="southamerica-audio">
+                    <audio controls>
+                            <source src="assets/podcats/SOUTH AMERICA COPA PODCAST.mp3" type="audio/mpeg">
+                        </audio>
+                <div class="album-cover"><img src="assets/south america.png" alt="South America"></div>
+                <div>
+                    <div class="song-title">South America</div>
+                    <p class="artist">Artist Name</p>
+                </div>
+            </div>
+            <div class="audio-player" id="oceania-audio">
+                    <audio controls>
+                            <source src="assets/podcats/Australia.mp3" type="audio/mpeg">
+                        </audio>
+                <div class="album-cover"><img src="assets/oceania-flags-helge.jpg" alt="Oceania"></div>
+                <div>
+                    <div class="song-title">Oceania/Australia</div>
+                    <p class="artist">Artist Name</p>
+                </div>
+            </div>
+            <div class="audio-player" id="antarctica-audio">
+                    <audio controls>
+                            <source src="assets/podcats/Antarctica.mp3" type="audio/mpeg">
+                        </audio>
+                <div class="album-cover"><img src="assets/ANTARCTICA.jpg" alt="Antarctica"></div>
+                <div>
+                    <div class="song-title">Antarctica</div>
+                    <p class="artist">Artist Name</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

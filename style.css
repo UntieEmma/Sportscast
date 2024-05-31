@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    height: 100vh;
+    padding: 0 6%;
+}
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+   
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6%;
+    background: #fff;
+    color: #282828;
+    border-bottom: #9b9b9b solid 0.75px;
+}
+
+.logo a{
+    color: #282828;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+li{
+    list-style: none;
+
+}
+
+li a{
+    text-decoration: none;
+    color: #282828;
+    font-size: 1.3rem;
+}
+
+.menu__link {
+    color: #282828;
+    line-height: 2;
+    position: relative;
+  }
+  
+  .menu__link::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #282828;
+    position: absolute;
+    bottom: -.25rem;
+    left: 0;
+    transition: width .4s;
+  }
+  
+  .menu__link:hover::before {
+    width: 100%;
+  }
+.background{
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+}
+.background{
+    color:darkolivegreen;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.current-channel{
+    flex: 1;
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.player-img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.player-img img{
+    object-fit: cover;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
+}
+
+.player-img:hover img{
+    box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.8);
+}
+
+.player-img img.active{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+.channel-names{
+    color: #fff
+}
+h2{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    margin: 10px 0 0;
+}
+
+h3{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0 0;
+}
+
+.player-controls{
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    width: 200px;
+}
+
+.fa-solid{
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.fa-solid:hover{
+    filter: brightness(80%);
+}
+
+.play-button{
+    font-size: 44px;
+    position: relative;
+    top: 3px;
+}
+
+.channel-names{
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column
+}
+
+/*=================================other channels==================================*/
+
+.other-channels{
+    height: 100px;
+    padding: 1rem 0 0;
+    display: flex;
+    justify-content: center
+   }
+.audio-player {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 80px;
+    background-color: #282828;
+    padding: 8px;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+  .audio-player.active{
+    background: linear-gradient(0deg, #e81cff 0%, #40c9ff 100% );
+  }
+  
+  .album-cover {
+    width: 64px;
+    height: 64px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-right: 12px;
+    overflow: hidden;
+  }
+  .album-cover img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+  .song-info {
+    margin-bottom: 4px;
+  }
+  
+  .song-title {
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+  }
+  
+  .artist {
+    font-size: 12px;
+    color: #b3b3b3;
+    margin: 0;
+  }
+
+  
+  @keyframes progress-animation {
+    0% {
+      transform: scaleX(0);
+    }
+  
+    100% {
+      transform: scaleX(1);
+    }
+  }
+
+
+
+/* Articles Section */
+.articles-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 8rem;
+    color: #fff;
+}
+
+.article {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.article h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.article p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin: 0;
+    margin: 0;
+    text-align: justify;
+    padding: 10px;
+    line-height: 1.6;
+}
+
+.article video {
+    border-radius: 8px;
+    width: 40%; /* Adjust the width as needed */
+    height: auto;
+}
+/* style.css */
+
+.article-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between video and text */
+}
+.article-text {
+    width: 60%; /* Adjust the width as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* style.css */
+
+.articles-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between articles */
+}
+
+
+
+
+.container1 video {
+    width: 40%; /* Adjust the percentage as needed */
+    max-width: 400px; /* Optionally set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures the element behaves like a block element */
+    margin: 0 auto; /* Centers the video */
+}
